@@ -24,15 +24,15 @@
 
 	var typing_i = 0;
 	var typing_text_i = 0;
-	var typing_text = ['Outliers', 'A Future of Decentralization', 'Blockchain Innovation'];
-	var typing_speed = 60;
+	var typing_text = ['Outliers', 'Blockchain Innovation', 'A Future of Decentralization'];
+	var typing_speed = 50;
 	var typing_right_flag = true;
 
 	function typeWriter() {
-		if (timeId != "") {clearTimeout(timeId); $('#target-target').css('display', 'inline'); typing_speed = 50;};
+		if (timeId != "") {clearTimeout(timeId); $('#target-target').css('display', 'inline'); typing_speed = 50 - 10 * typing_text_i};
 		var current_text = typing_text[typing_text_i];
 		if (typing_right_flag) {
-			if (typing_i == current_text.length) { typing_right_flag = false; typing_speed = 1500; blink_anchor();}
+			if (typing_i == current_text.length) { typing_right_flag = false; typing_speed = 1200; blink_anchor();}
 			document.getElementById("typing-effect").innerHTML += current_text.charAt(typing_i);
 			typing_i++;
 			setTimeout(typeWriter, typing_speed);
