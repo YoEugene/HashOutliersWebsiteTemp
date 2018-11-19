@@ -813,18 +813,25 @@ ul.slimmenu.collapsed li > ul {
 	letter-spacing:4px;
 }
 .link-down{
+  padding: 15px;
 	position:absolute;
-	width:34px;
-	height:48px;
-	bottom:50px;
+	width:44px;
+	height:24px;
+	bottom:52px;
 	left:50%;
 	margin-left:-17px;
-	background-image:url('../images/scrolldown.gif');
-	background-size:34px 48px;
+	background-image:url('../images/arrow-down.png');
+	background-size:44px 24px;
 	background-position:center center;
+  background-repeat: no-repeat;
 	z-index:10;
 }
 
+.link-down:hover {
+  bottom: 59px;
+  -webkit-transition: bottom 0.3s;
+  transition: bottom 0.3s;
+}
 /* #About
 ================================================== */
 
@@ -3205,4 +3212,8 @@ ul.slimmenu li > ul {
 .temp1:hover {
   text-decoration: underline;
   font-weight: 600;
+}
+
+.footer {
+  padding: 30px;
 }
