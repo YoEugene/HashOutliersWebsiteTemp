@@ -709,6 +709,19 @@ ul.slimmenu.collapsed li > ul {
   background-size: cover;
 }
 
+#home button {
+	background: #fff;
+	color:#D2A56E;;
+	font-size:13px;
+  font-weight: 500;
+	padding: 13px 25px;
+	max-width:150px;
+}
+
+#home button:hover {
+	color:#fff;
+}
+
 .home-carousel-wrap{
 	position:relative;
 	width:100%;
@@ -2936,12 +2949,12 @@ figure.vimeo a img, figure.youtube a img {
 
 @media only screen and (max-width: 1200px) {
 .logo{
-	width:80px;
-	height:15px;
+	width:130px;
+	height:30px;
 	left:10px;
 	top:30px;
 	background:url('../images/logo_horizontal.png') no-repeat center center;
-	background-size:80px 15px;
+	background-size:130px 30px;
 }
 .cbp-af-header.cbp-af-header-shrink .logo{
 	width:80px;
@@ -3216,4 +3229,15 @@ ul.slimmenu li > ul {
 
 .footer {
   padding: 30px;
+}
+
+#button-con button:hover {
+  background-color:#cfa144;
+}
+
+.button-effect {
+  margin: 0;
+  position: relative;
+  top: 10px;
+  left: 90px;
 }
