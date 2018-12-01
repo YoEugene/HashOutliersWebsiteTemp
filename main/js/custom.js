@@ -44,7 +44,11 @@
 		}
 	}
 
-	setTimeout(function(){typeWriter()},1000);
+	setTimeout(function(){
+		if(window.location.href.indexOf('index')!=-1) {
+			typeWriter()
+		}
+	},1000);
 
 	//Navigation
 
