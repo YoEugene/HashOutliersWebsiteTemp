@@ -25,7 +25,7 @@
 	var typing_i = 0;
 	var typing_text_i = 0;
 	var typing_text = ['Outliers', 'Blockchain Innovation', 'A Future of Decentralization'];
-	var typing_speed = 50;
+	var typing_speed = 60;
 	var typing_right_flag = true;
 
 	function typeWriter() {
