@@ -1573,6 +1573,7 @@ svg * {
 	transform: translate3d(1px,0,0);
 }
 .portfolio-box-1 .mask{
+  cursor: pointer;
 	position:absolute;
 	top:0;
 	left:0;
