@@ -382,6 +382,9 @@ body.royal_preloader {
 .cbp-af-header.cbp-af-header-shrink ul.slimmenu li:first-child {
 	background:none;
 }
+.cbp-af-header.cbp-af-header-shrink ul.slimmenu li a {
+  font-size: 16px;
+}
 .cbp-af-header.cbp-af-header-shrink ul.slimmenu li ul li:first-child {
 	background:none;
 }
