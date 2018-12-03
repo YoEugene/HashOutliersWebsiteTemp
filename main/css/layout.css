@@ -735,7 +735,7 @@ ul.slimmenu.collapsed li > ul {
   font-size: 22px;
   line-height: 33px;
   font-weight: 300;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 .bio-content a {
