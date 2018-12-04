@@ -360,11 +360,11 @@ body.royal_preloader {
 	transition : all 0.3s ease-out;
 }
 .cbp-af-header.cbp-af-header-shrink .logo{
-	width:195px;
-	height:16px;
-	top:32px;
+	width:220px;
+	height:52px;
+	top:16px;
 	background:url('../images/logo_horizontal.png') no-repeat center center;
-	background-size:195px 45px;
+	background-size:220px 52px;
 	-webkit-transition : all 0.3s ease-out;
 	-moz-transition : all 0.3s ease-out;
 	-o-transition :all 0.3s ease-out;
@@ -409,12 +409,12 @@ ul.slimmenu li ul {
 
 .logo{
 	position:absolute;
-	width:260px;
-	height:20px;
+	width:300px;
+	height:71px;
 	z-index:10000;
-	top:52px;
+	top:26px;
 	background:url('../images/logo_horizontal.png') no-repeat center center;
-	background-size:260px 61px;
+	background-size:300px 71px;
 	-webkit-transition : all 0.3s ease-out;
 	-moz-transition : all 0.3s ease-out;
 	-o-transition :all 0.3s ease-out;
@@ -605,6 +605,15 @@ ul.slimmenu.collapsed li .sub-collapser {
 ul.slimmenu.collapsed li > ul {
     display: none;
     position: static;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  ul.slimmenu.collapsed {
+    background-color: #c6c6c691;
+  }
+  .cbp-af-header-shrink ul.slimmenu.collapsed {
+    background-color: rgba(0,0,0,0);
+  }
 }
 
 /* #Primary
@@ -906,6 +915,33 @@ ul.slimmenu.collapsed li > ul {
   transition: bottom 0.3s;
 }
 
+/* Apply
+================================================== */
+#apply .twelve.columns{
+  width:70%;
+  margin-left:15%;
+  position:relative;
+  top:120px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  #apply .twelve.columns{
+    width:100%;
+    margin-left:0%;
+    position:relative;
+    top:78px;
+    height: 100vh;
+  }
+  .typeform-widget {
+    height: calc(100vh - 78px) !important;
+  }
+  .typeform-widget iframe {
+    min-height: calc(100vh - 78px) !important;
+    position: relative !important;
+    top: 78px !important;
+  }
+}
+
 /* #Belief
 ================================================== */
 
@@ -966,15 +1002,12 @@ ul.slimmenu.collapsed li > ul {
   background-size: cover;
   height: 680px;
 }
-
 .poseidon {
-  background: url('../images/portfolio/poseidon-cover.png') no-repeat;
+  background: url('../images/portfolio/poseidon-cover.png') no-repeat center center;
 }
-
 #bio .home-text {
   top: 420px;
 }
-
 #bio .land-text {
   text-align: center;
   position: relative;
@@ -984,7 +1017,9 @@ ul.slimmenu.collapsed li > ul {
   color: #191919;
   line-height: 100px  ;
 }
-
+.home-text-m {
+  display: none;
+}
 #bio .sub-title {
   text-align: center;
   position: relative;
@@ -993,23 +1028,70 @@ ul.slimmenu.collapsed li > ul {
   font-size: 35px;
   font-weight: 500;
 }
-
 .bio-menu .logo {
   background: url('../images/logo_horizontal_b.png') no-repeat center center;
-  background-size: 260px 61px;
+  background-size: 300px 71px;
 }
-
 .bio-menu.menu-back {
   /* background-color: #191919; */
 }
-
 .bio-menu ul.slimmenu li a {
   color: #191919;
 }
-
 .bio-menu.cbp-af-header-shrink ul.slimmenu li a {
   color: #fff;
 }
+#bio-text .eight.columns {
+   position: relative;
+   left: -48px;
+}
+
+/* RWD */
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  body {
+    background-color: #f6f6f6;
+  }
+  #bio {
+    height: 50vh;
+  }
+  #bio .home-text {
+    display: none;
+  }
+  .home-text-m {
+    display: block;
+    background-color: #f6f6f6;
+  }
+  .home-text-m h1, .home-text-m h4 {
+    /* text-align: left; */
+    /* position: relative; */
+    /* left: 20px; */
+    color: #191919;
+  }
+  .home-text-m h1 {
+    font-weight: 700;
+  }
+  #bio-text .four.columns {
+    display: none;
+  }
+  #bio-text .eight.columns {
+    width: 300px;
+    position: relative;
+    left: 0;
+  }
+  #bio-text .eight.columns h3 {
+    padding: 40px 0;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+  #bio-text .eight.columns p {
+    padding-bottom: 40px;
+    font-size: 17px;
+    line-height: 28px;
+  }
+}
+
 /* #About
 ================================================== */
 
@@ -1593,7 +1675,9 @@ svg * {
 }
 .portfolio-box-1 h3{
 	position:absolute;
-	bottom:40px;
+  top: 56%;
+	left: 50%;
+  transform: translate(-50%,-50%);
 	font-family: 'Hind Siliguri', sans-serif;
 	letter-spacing:1px;
 	font-weight:300;
@@ -1604,6 +1688,7 @@ svg * {
 	z-index:3;
 	letter-spacing:0px;
 	color:#fff;
+  cursor: pointer;
 	opacity:0;
     -webkit-transition: all 300ms linear;
     -moz-transition: all 300ms linear;
@@ -1617,11 +1702,19 @@ svg * {
 }
 .portfolio-box-1 h3 span{
   color: #fff;
-  font-weight:300;
+  font-weight:900;
 	font-size: 42px;
-  /* color:#D2A56E; */
-	/* letter-spacing:2px; */
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
 }
+.portfolio-box-1:hover h3 span {
+  color:#D2A56E;
+  -webkit-transition: color 1s;
+  -o-transition: color 1s;
+  transition: color 1s;
+}
+
 .portfolio-box-1 img{
 	width:100%;
 	display:block;
@@ -3118,20 +3211,26 @@ figure.vimeo a img, figure.youtube a img {
 
 @media only screen and (max-width: 1200px) {
 .logo{
-	width:130px;
-	height:30px;
-	left:10px;
-	top:30px;
+	width:191px;
+	height:45px;
+	left:-12px;
+	top:18px;
 	background:url('../images/logo_horizontal.png') no-repeat center center;
-	background-size:130px 30px;
+	background-size:191px 45px;
 }
+
+.bio-menu .logo{
+  background:url('../images/logo_horizontal_b.png') no-repeat center center;
+	background-size:191px 45px;
+}
+
 .cbp-af-header.cbp-af-header-shrink .logo{
-	width:80px;
-	height:15px;
-	left:10px;
-	top:30px;
+	width:157px;
+	height:37px;
+	left:0px;
+	top:21px;
 	background:url('../images/logo_horizontal.png') no-repeat center center;
-	background-size:80px 15px;
+	background-size:157px 37px;
 	-webkit-transition : all 0.5s ease-out;
 	-moz-transition : all 0.5s ease-out;
 	-o-transition :all 0.5s ease-out;

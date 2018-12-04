@@ -45,7 +45,7 @@
 	}
 
 	setTimeout(function(){
-		if(window.location.href.indexOf('index')!=-1) {
+		if($('#home').length=='1') {
 			typeWriter()
 		}
 	},1000);
