@@ -930,16 +930,16 @@ ul.slimmenu.collapsed li > ul {
     margin-left:0%;
     position:relative;
     top:78px;
-    height: 100vh;
+    /* height: 100vh; */
   }
-  .typeform-widget {
+  /* .typeform-widget {
     height: calc(100vh - 78px) !important;
   }
   .typeform-widget iframe {
     min-height: calc(100vh - 78px) !important;
     position: relative !important;
     top: 78px !important;
-  }
+  } */
 }
 
 /* #Belief
