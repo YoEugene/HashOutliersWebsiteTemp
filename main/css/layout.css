@@ -934,12 +934,12 @@ ul.slimmenu.collapsed li > ul {
   }
   /* .typeform-widget {
     height: calc(100vh - 78px) !important;
-  }
+  } */
   .typeform-widget iframe {
     min-height: calc(100vh - 78px) !important;
     position: relative !important;
     top: 78px !important;
-  } */
+  }
 }
 
 /* #Belief
