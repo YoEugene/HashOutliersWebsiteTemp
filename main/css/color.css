@@ -1,5 +1,6 @@
 
 ul.slimmenu li a:hover,
+.cbp-af-header-shrink ul.slimmenu li a:hover,
 ul.slimmenu li a.mPS2id-highlight,
 .about-wrap .about-icon,
 .counter-wrap p,
@@ -41,7 +42,7 @@ ul.slimmenu li a.mPS2id-highlight,
 #ajax-form textarea:focus,
 #ajax-form input:focus,
 #ajax-form textarea:active,
-#ajax-form input:active {	
+#ajax-form input:active {
 	border-bottom:1px solid #cfa144;
 }
 ::selection {
@@ -59,25 +60,3 @@ ul.slimmenu li a.mPS2id-highlight,
 	border-left:3px solid #cfa144;
 }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

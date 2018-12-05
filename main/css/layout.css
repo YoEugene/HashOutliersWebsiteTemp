@@ -40,7 +40,8 @@ Table of contents
 @import 'https://fonts.googleapis.com/css?family=Hind Siliguri:300,400,500,600,700&subset=devanagari,latin-ext';
 
 body {
-  background-color: #191919;
+  /* background-color: #191919; */
+  background-color: #EFEFEF;
 }
 
 body.royal_preloader {
@@ -383,7 +384,7 @@ body.royal_preloader {
 	background:none;
 }
 .cbp-af-header.cbp-af-header-shrink ul.slimmenu li a {
-  font-size: 16px;
+  font-size: 20px;
 }
 .cbp-af-header.cbp-af-header-shrink ul.slimmenu li ul li:first-child {
 	background:none;
@@ -402,11 +403,6 @@ ul.slimmenu li ul {
 	box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
-
-
-
-
-
 .logo{
 	position:absolute;
 	width:300px;
@@ -420,8 +416,6 @@ ul.slimmenu li ul {
 	-o-transition :all 0.3s ease-out;
 	transition : all 0.3s ease-out;
 }
-
-
 
 .menu-collapser {
     position: relative;
@@ -440,8 +434,8 @@ ul.slimmenu li ul {
 }
 .collapse-button {
     position: absolute;
-    right: 8px;
-    top: 60%;
+    right: 20px;
+    top: 55%;
     width: 40px;
     background-image: linear-gradient(to bottom, #151515, #040404);
     background-repeat: repeat-x;
@@ -479,11 +473,6 @@ ul.slimmenu li ul {
     width: 18px;
     margin: 2px 0;
 }
-
-
-
-
-
 
 ul.slimmenu {
 	padding-top:10px;
@@ -608,11 +597,42 @@ ul.slimmenu.collapsed li > ul {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
+  #menu-wrap .container {
+    width: 100%;
+  }
+  #menu-wrap .twelve.columns {
+    width: 100%;
+  }
   ul.slimmenu.collapsed {
-    background-color: #c6c6c691;
+    background-color: #e6e6e6;
+    height: 100vh;
+    text-align: center;
+    padding-top: 30vh;
+  }
+  ul.slimmenu.collapsed li {
+    padding: 0 10%;
+  }
+  ul.slimmenu.collapsed li a {
+    padding: 15px 0;
+    border-bottom: 1px solid #aaa;
+  }
+  ul.slimmenu.collapsed li:last-child a {
+    border-bottom: none;
   }
   .cbp-af-header-shrink ul.slimmenu.collapsed {
     background-color: rgba(0,0,0,0);
+  }
+  .cbp-af-header-shrink ul.slimmenu.collapsed li {
+    padding: 0 10%;
+  }
+  .cbp-af-header-shrink ul.slimmenu.collapsed li a {
+    border-bottom: 1px solid #696969 !important;
+  }
+  .cbp-af-header-shrink ul.slimmenu.collapsed li:last-child a {
+    border-bottom: none !important;
+  }
+  .cbp-af-header.cbp-af-header-shrink .logo {
+    left: 15px !important;
   }
 }
 
@@ -621,7 +641,6 @@ ul.slimmenu.collapsed li > ul {
 .hide {
   display: none;
 }
-
 .section{
   position:relative;
 	width:100%;
@@ -765,7 +784,7 @@ ul.slimmenu.collapsed li > ul {
 
 .grid-photo {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: bottom;
 }
 
 /* #Home
@@ -930,7 +949,7 @@ ul.slimmenu.collapsed li > ul {
     margin-left:0%;
     position:relative;
     top:78px;
-    /* height: 100vh; */
+    height: 100vh;
   }
   /* .typeform-widget {
     height: calc(100vh - 78px) !important;
@@ -1005,6 +1024,27 @@ ul.slimmenu.collapsed li > ul {
 .poseidon {
   background: url('../images/portfolio/poseidon-cover.png') no-repeat center center;
 }
+.peggy {
+  /* background: url('../images/portfolio/peggy-cover.jpg') no-repeat center 22%; */
+  background: url('../images/portfolio/peggy-cover.png') no-repeat 70% 80px;
+  -webkit-background-size: contain !important;
+  background-size: contain !important;
+}
+.ty {
+  background: url('../images/portfolio/p4.jpg') no-repeat 70% 80px;
+  -webkit-background-size: contain !important;
+  background-size: contain !important;
+}
+.dian {
+  background: url('../images/portfolio/dian-cover.png') no-repeat 70% 80px;
+  -webkit-background-size: contain !important;
+  background-size: contain !important;
+}
+.eugene {
+  background: url('../images/portfolio/eugene-cover.png') no-repeat 75% 100px;
+  -webkit-background-size: contain !important;
+  background-size: contain !important;
+}
 #bio .home-text {
   top: 420px;
 }
@@ -1033,7 +1073,7 @@ ul.slimmenu.collapsed li > ul {
   background-size: 300px 71px;
 }
 .bio-menu.menu-back {
-  /* background-color: #191919; */
+  background-color: #EFEFEF;
 }
 .bio-menu ul.slimmenu li a {
   color: #191919;
@@ -1045,12 +1085,18 @@ ul.slimmenu.collapsed li > ul {
    position: relative;
    left: -48px;
 }
+.bio-menu.menu-back.cbp-af-header-shrink {
+  background-color: rgba(33,33,33,.93);
+}
 
 /* RWD */
 
-@media only screen and (min-width: 320px) and (max-width: 479px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   body {
     background-color: #f6f6f6;
+  }
+  .bio-menu .logo {
+    left: 15px;
   }
   #bio {
     height: 50vh;
@@ -1085,10 +1131,42 @@ ul.slimmenu.collapsed li > ul {
     line-height: 30px;
     font-weight: 400;
   }
+  .eugene #bio-text .eight.columns h3 {
+    font-size: 24px;
+  }
   #bio-text .eight.columns p {
     padding-bottom: 40px;
     font-size: 17px;
     line-height: 28px;
+  }
+  #grid > div {
+    width: 100% !important;
+  }
+  .grid-photo {
+    height: auto;
+  }
+  .poseidon {
+    background: url('../images/portfolio/poseidon-cover-b.png') no-repeat center center;
+  }
+  .peggy {
+    background: url('../images/portfolio/peggy-cover.png') no-repeat center 50px;
+    -webkit-background-size: cover !important;
+    background-size: cover !important;
+  }
+  .ty {
+    background: url('../images/portfolio/p4.jpg') no-repeat center 50px;
+    -webkit-background-size: cover !important;
+    background-size: cover !important;
+  }
+  .dian {
+    background: url('../images/portfolio/dian-cover.png') no-repeat center 50px;
+    -webkit-background-size: cover !important;
+    background-size: cover !important;
+  }
+  .eugene {
+    background: url('../images/portfolio/eugene-cover.png') no-repeat center 75px;
+    -webkit-background-size: cover !important;
+    background-size: cover !important;
   }
 }
 
@@ -3213,8 +3291,8 @@ figure.vimeo a img, figure.youtube a img {
 .logo{
 	width:191px;
 	height:45px;
-	left:-12px;
-	top:18px;
+	left:10px;
+	top:14px;
 	background:url('../images/logo_horizontal.png') no-repeat center center;
 	background-size:191px 45px;
 }
@@ -3250,7 +3328,7 @@ ul.slimmenu li a: {
     border-bottom:none;
 }
 ul.slimmenu li a:hover {
-    border:none;
+  /* border:none; */
 	background:none;
 }
 ul.slimmenu li {
