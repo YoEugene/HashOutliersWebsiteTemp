@@ -2295,6 +2295,7 @@ figure.vimeo a img, figure.youtube a img {
   background-repeat: no-repeat !important;;
   background-attachment: fixed !important;;
   background-size: cover !important;
+  background-position: 10% bottom !important;
 }
 
 .parallax-partner {
@@ -2303,6 +2304,7 @@ figure.vimeo a img, figure.youtube a img {
   background-attachment: fixed !important;;
   background-size: cover !important;
   position: relative !important;
+  background-position: 10% bottom !important;
 }
 
 .parallax-2 {
