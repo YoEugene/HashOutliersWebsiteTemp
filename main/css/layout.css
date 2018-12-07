@@ -1283,6 +1283,9 @@ ul.slimmenu.collapsed li > ul {
 #owl-sep-1.owl-theme .owl-controls {
   left: 0 !important;
 }
+#grow-hero img {
+  width: 100%;
+}
 /* Fuel
 ================================================== */
 #fuel {
