@@ -1049,12 +1049,12 @@ ul.slimmenu.collapsed li > ul {
 }
 .peggy {
   /* background: url('../images/portfolio/peggy-cover.jpg') no-repeat center 22%; */
-  background: url('../images/portfolio/peggy-cover.png') no-repeat 70% 80px;
+  background: url('../images/portfolio/peggy-cover.jpg') no-repeat 0 bottom;
   -webkit-background-size: contain !important;
   background-size: contain !important;
 }
 .ty {
-  background: url('../images/portfolio/p4.jpg') no-repeat 70% 80px;
+  background: url('../images/portfolio/ty-cover.jpg') no-repeat 0 bottom;
   -webkit-background-size: contain !important;
   background-size: contain !important;
 }
@@ -1065,6 +1065,26 @@ ul.slimmenu.collapsed li > ul {
 }
 .eugene {
   background: url('../images/portfolio/eugene-cover-m.jpg') no-repeat 75% 100px;
+  -webkit-background-size: contain !important;
+  background-size: contain !important;
+}
+.jacob {
+  background: url('../images/portfolio/jacob-cover.jpg') no-repeat 0 bottom;
+  -webkit-background-size: contain !important;
+  background-size: contain !important;
+}
+.aaron {
+  background: url('../images/portfolio/aaron-cover.jpg') no-repeat 0 bottom;
+  -webkit-background-size: contain !important;
+  background-size: contain !important;
+}
+.joanne {
+  background: url('../images/portfolio/joanne-cover.jpg') no-repeat 0 bottom;
+  -webkit-background-size: contain !important;
+  background-size: contain !important;
+}
+.molly {
+  background: url('../images/portfolio/molly-cover.jpg') no-repeat 0 bottom;
   -webkit-background-size: contain !important;
   background-size: contain !important;
 }
@@ -1172,12 +1192,12 @@ ul.slimmenu.collapsed li > ul {
     background: url('../images/portfolio/poseidon-cover-b.png') no-repeat center center;
   }
   .peggy {
-    background: url('../images/portfolio/peggy-cover.png') no-repeat center 50px;
+    background: url('../images/portfolio/peggy-cover-m.png') no-repeat center 50px;
     -webkit-background-size: cover !important;
     background-size: cover !important;
   }
   .ty {
-    background: url('../images/portfolio/p4.jpg') no-repeat center 50px;
+    background: url('../images/portfolio/ty-cover-m.jpg') no-repeat center 50px;
     -webkit-background-size: cover !important;
     background-size: cover !important;
   }
@@ -1188,6 +1208,26 @@ ul.slimmenu.collapsed li > ul {
   }
   .eugene {
     background: url('../images/portfolio/eugene-cover-m.jpg') no-repeat center 75px;
+    -webkit-background-size: cover !important;
+    background-size: cover !important;
+  }
+  .jacob {
+    background: url('../images/portfolio/p2.jpg') no-repeat center 75px;
+    -webkit-background-size: cover !important;
+    background-size: cover !important;
+  }
+  .aaron {
+    background: url('../images/portfolio/p7.jpg') no-repeat center 75px;
+    -webkit-background-size: cover !important;
+    background-size: cover !important;
+  }
+  .joanne {
+    background: url('../images/portfolio/p8.jpg') no-repeat center 75px;
+    -webkit-background-size: cover !important;
+    background-size: cover !important;
+  }
+  .molly {
+    background: url('../images/portfolio/p9.jpg') no-repeat center 75px;
     -webkit-background-size: cover !important;
     background-size: cover !important;
   }
@@ -1912,6 +1952,10 @@ svg * {
 	opacity:.9;
 }
 .portfolio-box-1 h3{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 	position:absolute;
   top: 56%;
 	left: 50%;
@@ -3386,7 +3430,7 @@ figure.vimeo a img, figure.youtube a img {
 	color:#fff;
 	opacity:1;
 	margin:0;
-	padding:0;
+	padding:9px;
     -webkit-transition: all 300ms linear;
     -moz-transition: all 300ms linear;
     -o-transition: all 300ms linear;
