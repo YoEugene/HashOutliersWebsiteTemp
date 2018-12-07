@@ -645,8 +645,14 @@ ul.slimmenu.collapsed li > ul {
   position:relative;
 	width:100%;
 }
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
 .full-height{
 	height:100vh;
+  max-height: 800px;
 }
 .padding-top-bottom{
 	padding-top:120px;
@@ -796,8 +802,6 @@ ul.slimmenu.collapsed li > ul {
 }
 
 #home button {
-	/* background: #fff; */
-	/* color:#D2A56E;; */
 	background: #8a8a8a;
 	color:#fff;;
 	font-size:13px;
@@ -826,13 +830,13 @@ ul.slimmenu.collapsed li > ul {
 	background-position:center center;
 }
 #sync1 .item.background-home-image-1 {
-	background-image:url('../images/home-1.jpg');
+	background-image:url('../images/hero1.jpg');
 }
 #sync1 .item.background-home-image-2 {
-	background-image:url('../images/home-2.jpg');
+	background-image:url('../images/hero2.jpg');
 }
 #sync1 .item.background-home-image-3 {
-	background-image:url('../images/home-3.jpg');
+	background-image:url('../images/hero3.jpg');
 }
 
 #sync2 {
@@ -879,7 +883,7 @@ ul.slimmenu.collapsed li > ul {
 .home-text{
 	position:absolute;
 	width:100%;
-	top:50%;
+	top:55%;
 	left:0;
 	z-index:10;
 	-webkit-transform: translateY(-50%);
@@ -919,7 +923,7 @@ ul.slimmenu.collapsed li > ul {
 	width:44px;
 	height:24px;
 	bottom:52px;
-	left:50%;
+	left:49%;
 	margin-left:-17px;
 	background-image:url('../images/arrow-down.png');
 	background-size:44px 24px;
@@ -932,6 +936,20 @@ ul.slimmenu.collapsed li > ul {
   bottom: 59px;
   -webkit-transition: bottom 0.3s;
   transition: bottom 0.3s;
+}
+#partner .columns {
+  height: 100px;
+  white-space: nowrap;
+}
+#partner img {
+  vertical-align: middle;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+#partner img:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 /* Apply
@@ -969,7 +987,6 @@ ul.slimmenu.collapsed li > ul {
   -webkit-background-size: cover;
   background-size: cover;
 }
-
 #belief .home-text {
   top: 52%;
 }
@@ -977,9 +994,15 @@ ul.slimmenu.collapsed li > ul {
 #belief .land-text {
   text-align: left;
   position: relative;
-  left: 3%;
+  left: 10px;
   font-size: 66px;
   font-weight: 700;
+}
+#belief .sub-title {
+  text-align: left;
+  position: relative;
+  left: 10px;
+  padding-top: 15px;
 }
 
 /* #People
@@ -1036,12 +1059,12 @@ ul.slimmenu.collapsed li > ul {
   background-size: contain !important;
 }
 .dian {
-  background: url('../images/portfolio/dian-cover.png') no-repeat 70% 80px;
+  background: url('../images/portfolio/dian-cover.jpg') no-repeat 0 bottom;
   -webkit-background-size: contain !important;
   background-size: contain !important;
 }
 .eugene {
-  background: url('../images/portfolio/eugene-cover.png') no-repeat 75% 100px;
+  background: url('../images/portfolio/eugene-cover-m.jpg') no-repeat 75% 100px;
   -webkit-background-size: contain !important;
   background-size: contain !important;
 }
@@ -1099,7 +1122,7 @@ ul.slimmenu.collapsed li > ul {
     left: 15px;
   }
   #bio {
-    height: 50vh;
+    height: 60vh;
   }
   #bio .home-text {
     display: none;
@@ -1159,17 +1182,151 @@ ul.slimmenu.collapsed li > ul {
     background-size: cover !important;
   }
   .dian {
-    background: url('../images/portfolio/dian-cover.png') no-repeat center 50px;
+    background: url('../images/portfolio/dian-cover-m.png') no-repeat center 50px;
     -webkit-background-size: cover !important;
     background-size: cover !important;
   }
   .eugene {
-    background: url('../images/portfolio/eugene-cover.png') no-repeat center 75px;
+    background: url('../images/portfolio/eugene-cover-m.jpg') no-repeat center 75px;
     -webkit-background-size: cover !important;
     background-size: cover !important;
   }
 }
 
+/* Grow
+================================================== */
+#grow {
+  background: url('../images/grow-01.jpg') no-repeat center bottom;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+#grow .land-text {
+  text-align: left;
+  position: relative;
+  left: 10px;
+  font-size: 66px;
+  font-weight: 700;
+}
+#grow .sub-title {
+  text-align: left;
+  position: relative;
+  left: 10px;
+  padding-top: 15px;
+}
+#grow button {
+  top: -15px;
+  left: 25px;
+	background: #8a8a8a;
+	color:#fff;;
+	font-size:13px;
+  font-weight: 500;
+	padding: 13px 25px;
+	max-width:150px;
+}
+#grow2 .sub-title {
+   color: #717071;
+   text-align: left;
+}
+#grow-icon h1 {
+  text-align: left;
+  position: relative;
+  top: -5px;
+  left: 80px;
+  font-weight: 300;
+  line-height: 50px;
+  color: #191919;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+#grow-icon p {
+  color: #717071;
+  padding-top: 14px;
+  padding-left: 80px;
+  font-size: 22px;
+  line-height: 33px;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+#grow-slogan h1 {
+  left: 0;
+}
+#grow-slogan .main-slogan {
+  color: #D2A56E;
+  font-size: 50px;
+  font-weight: 700;
+  padding: 25px 0 40px 0;
+}
+#grow-slogan .sub-title {
+  text-align: left;
+  color: #717071;
+  font-size: 22px;
+  line-height: 33px;
+  font-weight: 300;
+}
+#grow-hero #owl-sep-1 {
+  margin: 0;
+  width: 100%;
+  max-width: 100%
+}
+#grow-hero .container {
+  width: 100%;
+}
+#grow-hero .twelve.columns {
+  width: 100%;
+  margin: 0;
+  display: grid;
+}
+.owl-pagination {
+  text-align: center;
+  zoom: 1.5;
+  position: relative;
+  bottom: 10px;
+}
+#owl-sep-1.owl-theme .owl-controls {
+  left: 0 !important;
+}
+/* Fuel
+================================================== */
+#fuel {
+  background: url('../images/fuel-01.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+#fuel .land-text {
+  text-align: left;
+  position: relative;
+  left: 10px;
+  font-size: 66px;
+  font-weight: 700;
+}
+#fuel .sub-title {
+  text-align: left;
+  position: relative;
+  left: 10px;
+  padding-top: 15px;
+}
+#fuel2 .sub-title {
+   color: #717071;
+   text-align: left;
+}
+#fuel2 .about-wrap {
+  color: #000;
+}
+#fuel2 .about-wrap svg {
+  position: relative;
+  left: 20px;
+  top: 10px;
+}
+#fuel2 .about-wrap h3 {
+  color: #717071;
+  font-weight: 500;
+  position: relative;
+  left: 180px;
+  text-align: left;
+  line-height: 44px;
+}
+#fund-return {
+  background-color: rgb(12,7,6);
+}
 /* #About
 ================================================== */
 
@@ -2130,6 +2287,20 @@ figure.vimeo a img, figure.youtube a img {
 
 /* #Sep 2
 ================================================== */
+.parallax-belief {
+  background-image: url('../images/belief-3.jpg') !important;
+  background-repeat: no-repeat !important;;
+  background-attachment: fixed !important;;
+  background-size: cover !important;
+}
+
+.parallax-partner {
+  background-image: url('../images/partner-bg.jpg') !important;
+  background-repeat: no-repeat !important;;
+  background-attachment: fixed !important;;
+  background-size: cover !important;
+  position: relative !important;
+}
 
 .parallax-2 {
 	background: url('../images/parallax-2.jpg') repeat fixed;
@@ -3561,7 +3732,7 @@ ul.slimmenu li > ul {
 	padding-bottom:10px;
 }
 .list-social-footer li {
-    margin-left:2px;
+  margin-left:2px;
 	margin-right:2px;
 }
 }

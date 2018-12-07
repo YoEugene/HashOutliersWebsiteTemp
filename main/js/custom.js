@@ -115,9 +115,17 @@
 	  animTimingFunction: Vivus.EASE
 	};
 
-	var vivus = new Vivus('svg-icon-1',	options, onComplete);
-				new Vivus('svg-icon-2',	options, onComplete);
-				new Vivus('svg-icon-3',	options, onComplete);
+	var icon_option = (duration) => {return {duration: duration, type: 'oneByOne', animTimingFunction: Vivus.EASE}};
+
+	if (location.pathname.indexOf('grow') != -1) {
+		var vivus = new Vivus('svg-icon-1',	options, onComplete);
+								new Vivus('svg-icon-2',	options, onComplete);
+								new Vivus('svg-icon-3',	options, onComplete);
+	} else if (location.pathname.indexOf('fuel') != -1) {
+		var vivus = new Vivus('fuel-icon-1',	icon_option(500), onComplete);
+								new Vivus('fuel-icon-2',	icon_option(120), onComplete);
+								new Vivus('fuel-icon-3',	icon_option(120), onComplete);
+	}
 
 	function onComplete() {}
 
@@ -354,49 +362,49 @@
 ];
 
 		//set google map options
-		var map_options = {
-			center: new google.maps.LatLng(latitude, longitude),
-			zoom: map_zoom,
-			panControl: false,
-			zoomControl: false,
-			mapTypeControl: false,
-			streetViewControl: false,
-			mapTypeId: google.maps.MapTypeId.ROADMAP,
-			scrollwheel: false,
-			styles: style,
-		}
-		//inizialize the map
-		var map = new google.maps.Map(document.getElementById('google-container'), map_options);
-		//add a custom marker to the map
-		var marker = new google.maps.Marker({
-			position: new google.maps.LatLng(latitude, longitude),
-			map: map,
-			visible: true,
-			icon: marker_url,
-		});
-
-		//add custom buttons for the zoom-in/zoom-out on the map
-		function CustomZoomControl(controlDiv, map) {
-			//grap the zoom elements from the DOM and insert them in the map
-			var controlUIzoomIn= document.getElementById('cd-zoom-in'),
-				controlUIzoomOut= document.getElementById('cd-zoom-out');
-			controlDiv.appendChild(controlUIzoomIn);
-			controlDiv.appendChild(controlUIzoomOut);
-
-			// Setup the click event listeners and zoom-in or out according to the clicked element
-			google.maps.event.addDomListener(controlUIzoomIn, 'click', function() {
-				map.setZoom(map.getZoom()+1)
-			});
-			google.maps.event.addDomListener(controlUIzoomOut, 'click', function() {
-				map.setZoom(map.getZoom()-1)
-			});
-		}
-
-		var zoomControlDiv = document.createElement('div');
-		var zoomControl = new CustomZoomControl(zoomControlDiv, map);
-
-		//insert the zoom div on the top left of the map
-		map.controls[google.maps.ControlPosition.LEFT_TOP].push(zoomControlDiv);
+		// var map_options = {
+		// 	center: new google.maps.LatLng(latitude, longitude),
+		// 	zoom: map_zoom,
+		// 	panControl: false,
+		// 	zoomControl: false,
+		// 	mapTypeControl: false,
+		// 	streetViewControl: false,
+		// 	mapTypeId: google.maps.MapTypeId.ROADMAP,
+		// 	scrollwheel: false,
+		// 	styles: style,
+		// }
+		// //inizialize the map
+		// var map = new google.maps.Map(document.getElementById('google-container'), map_options);
+		// //add a custom marker to the map
+		// var marker = new google.maps.Marker({
+		// 	position: new google.maps.LatLng(latitude, longitude),
+		// 	map: map,
+		// 	visible: true,
+		// 	icon: marker_url,
+		// });
+		//
+		// //add custom buttons for the zoom-in/zoom-out on the map
+		// function CustomZoomControl(controlDiv, map) {
+		// 	//grap the zoom elements from the DOM and insert them in the map
+		// 	var controlUIzoomIn= document.getElementById('cd-zoom-in'),
+		// 		controlUIzoomOut= document.getElementById('cd-zoom-out');
+		// 	controlDiv.appendChild(controlUIzoomIn);
+		// 	controlDiv.appendChild(controlUIzoomOut);
+		//
+		// 	// Setup the click event listeners and zoom-in or out according to the clicked element
+		// 	google.maps.event.addDomListener(controlUIzoomIn, 'click', function() {
+		// 		map.setZoom(map.getZoom()+1)
+		// 	});
+		// 	google.maps.event.addDomListener(controlUIzoomOut, 'click', function() {
+		// 		map.setZoom(map.getZoom()-1)
+		// 	});
+		// }
+		//
+		// var zoomControlDiv = document.createElement('div');
+		// var zoomControl = new CustomZoomControl(zoomControlDiv, map);
+		//
+		// //insert the zoom div on the top left of the map
+		// map.controls[google.maps.ControlPosition.LEFT_TOP].push(zoomControlDiv);
 
 
 	/* Portfolio Sorting */
