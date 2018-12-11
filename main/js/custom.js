@@ -45,7 +45,7 @@
 	}
 
 	setTimeout(function(){
-		if($('#home').length=='1') {
+		if($('#home').length=='1' && $('#typing-effect').css('display') == 'inline') {
 			typeWriter()
 		}
 	},1000);
@@ -145,7 +145,7 @@
 			slideSpeed : 500,
 			paginationSpeed : 500,
 			singleItem:true,
-			autoPlay: 5000
+			// autoPlay: 5000
 		});
 
 		/* Logos Carousel */
