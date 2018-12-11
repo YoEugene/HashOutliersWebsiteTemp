@@ -718,7 +718,7 @@ ul.slimmenu.collapsed li > ul {
 .title-text {
   position:relative;
 	width:100%;
-	padding-bottom:50px;
+	padding-bottom:45px;
 }
 .title-text.left p{
 	position:relative;
@@ -1158,17 +1158,18 @@ ul.slimmenu.collapsed li > ul {
 
 @media only screen and (min-width: 320px) and (max-width: 797px) {
   #people.full-height {
-    height: 450px;
+    height: 500px;
   }
   #people .home-text {
-    top: 240px;
+    top: 280px;
   }
   #people .land-text {
     font-size: 30px;
+    line-height: 50px;
   }
   #people .sub-title {
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 17px;
+    line-height: 23px;
   }
   #people .sub-title br {
     display: none;
@@ -1430,14 +1431,27 @@ ul.slimmenu.collapsed li > ul {
   line-height: 33px;
   font-family: 'Hind Siliguri', sans-serif;
 }
+#mentor .title-text.left h3{
+  font-weight: 900;
+  color: #D2A56E;
+  font-size: 52px;
+}
+#grow-slogan {
+  padding-top: 80px;
+}
 #grow-slogan h1 {
   left: 0;
+  text-align: left;
+  color: #000;
+  position: relative;
+  top: -5px;
 }
 #grow-slogan .main-slogan {
   color: #D2A56E;
   font-size: 50px;
+  line-height: 50px;
   font-weight: 700;
-  padding: 25px 0 40px 0;
+  padding: 15px 0 30px 0;
 }
 #grow-slogan .sub-title {
   text-align: left;
@@ -1471,6 +1485,12 @@ ul.slimmenu.collapsed li > ul {
 #grow-hero img {
   width: 100%;
 }
+#grow-hero .desktop-hero {
+  display: block;
+}
+#grow-hero .mobile-hero {
+  display: none;
+}
 #timeline .toktmln-list .col-lg span {
   font-size: 19px;
   line-height: 28px;
@@ -1499,12 +1519,12 @@ ul.slimmenu.collapsed li > ul {
     background-size: 800px;
   }
   #grow.full-height {
-    height: 600px;
+    height: 550px;
   }
   #grow .button-effect {
     margin: 0 auto;
     left: 0;
-    top: 10px;
+    top: 0px;
   }
   #grow2 .sub-title {
     font-size: 18px;
@@ -1534,7 +1554,10 @@ ul.slimmenu.collapsed li > ul {
     line-height: 22px;
   }
   #grow-slogan {
-    padding: 60px 30px;
+    padding: 70px 30px 30px 30px;
+  }
+  #grow-slogan .container {
+    margin-left: 0;
   }
   #grow-slogan h1 {
     font-size: 24px;
@@ -1567,6 +1590,12 @@ ul.slimmenu.collapsed li > ul {
   }
   #timeline .toktmln-list .col-lg span:last-of-type {
     font-size: 15px;
+  }
+  #grow-hero .desktop-hero {
+    display: none;
+  }
+  #grow-hero .mobile-hero {
+    display: block;
   }
 }
 
@@ -1613,7 +1642,58 @@ ul.slimmenu.collapsed li > ul {
 }
 #fund-return {
   background-color: rgb(12,7,6);
+  display: block;
 }
+#fund-return-mobile {
+  background-color: rgb(12,7,6);
+  display: none;
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  #fuel.full-height {
+    height: 500px;
+  }
+  #fuel .land-text {
+    font-size: 26px;
+    line-height: 40px;
+  }
+  #fuel .sub-title {
+    font-size: 17px;
+    line-height: 23px;
+  }
+  #fuel2 .sub-title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  #fuel-icon {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+  #fuel-icon .four.columns {
+    width: calc(100% - 20px);
+    margin: 30px 0;
+  }
+  #fuel2 .about-wrap h3 {
+    font-size: 22px;
+    line-height: 33px;
+  }
+  #fuel2 .about-wrap svg, #fuel-icon img {
+    zoom: 0.75;
+  }
+  #fuel2 .about-icon {
+    left: 25px;
+  }
+  #fund-return {
+    display: none;
+  }
+  #fund-return-mobile {
+    display: block;
+  }
+  #fund-return-mobile .container {
+    width: calc(100% - 40px);
+    padding: 20px 20px 30px;
+  }
+}
+
 /* #About
 ================================================== */
 
@@ -1727,27 +1807,35 @@ svg * {
 	text-align:left;
 	padding-bottom:20px;
 }
+.team-wrap h3{
+  font-size: 33px;
+	text-align:left;
+	padding-bottom:15px;
+  font-weight: 500;
+}
 .team-wrap p{
 	text-align:left;
-	padding-bottom:25px;
+  font-size: 12px;
+}
+.team-wrap p:last-of-type {
+  padding-bottom: 15px;
 }
 .team-wrap img{
 	width:100%;
 	display:block;
 	padding-bottom:30px;
 }
-
 .social-team{
 	position:relative;
 	display:block;
 }
 .list-social-team li {
-    padding:0;
+  padding:0;
 	margin:0;
-    list-style: none;
+  list-style: none;
 	text-align:left;
-	width:20px;
-	height:20px;
+	width:25px;
+	height:25px;
     display: inline-block;
 	cursor:pointer;
 	border-radius:50%;
@@ -1760,14 +1848,14 @@ svg * {
 }
 .list-social-team li.icon-team a {
 	font-family: 'FontAwesome';
-	font-size: 14px;
-	line-height:20px;
+	font-size: 16px;
+	line-height:25px;
 	text-align:left;
-	width:20px;
+	width:25px;
 	color:#fff;
 	opacity:1;
 	margin:0;
-	padding:0;
+	padding:0 10px 5px 0;
     -webkit-transition: all 300ms linear;
     -moz-transition: all 300ms linear;
     -o-transition: all 300ms linear;
@@ -1778,7 +1866,30 @@ svg * {
 }
 .list-social-team li:hover.icon-team a{
 }
-
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .team-wrap img {
+    padding-bottom: 10px;
+  }
+  .team-wrap {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .team-wrap h3 {
+    text-align: center;
+    padding: 10px 0 5px 0;
+  }
+  .team-wrap p {
+    text-align: center;
+  }
+  .list-social-team li {
+    width: 20px;
+    height: 20px;
+  }
+  .list-social-team li.icon-team a {
+    padding: 0;
+    font-size: 20px;
+  }
+}
 
 
 /* #Sep

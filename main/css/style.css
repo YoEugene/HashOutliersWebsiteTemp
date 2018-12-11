@@ -3439,7 +3439,7 @@ label.error { display: none !important; font-size: 13px; margin-top: 5px; color:
   .sltn-item { margin-left: -95px; margin-bottom: 80px; } }
 .toktmln-list { position: relative; }
 @media only screen and (min-width: 320px) and (max-width: 479px) {
-  .toktmln-list { position: relative; left: -65px;}
+  .toktmln-list { position: relative; left: -70px;}
 }
 .toktmln-list:before { position: absolute; left: 50%; top: -24px; width: 2px; margin-left: -1px; height: 100%; background: #fff; content: ''; }
 .toktmln-item { position: relative; padding: 0 0 20px; display: flex; justify-content: center; min-height: 80px;}
