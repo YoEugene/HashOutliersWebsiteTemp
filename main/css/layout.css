@@ -1315,9 +1315,9 @@ ul.slimmenu.collapsed li > ul {
     left: 0;
   }
   #bio-text .eight.columns h3 {
-    padding: 40px 0;
-    font-size: 26px;
-    line-height: 30px;
+    padding: 35px 0 25px 0;
+    font-size: 20px !important;
+    line-height: 28px !important;
     font-weight: 400;
   }
   .eugene #bio-text .eight.columns h3 {
@@ -1434,7 +1434,13 @@ ul.slimmenu.collapsed li > ul {
 #mentor .title-text.left h3{
   font-weight: 900;
   color: #D2A56E;
-  font-size: 52px;
+  font-size: 45px;
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  #mentor .title-text.left h3{
+    font-size: 40px;
+    text-align: center;
+  }
 }
 #grow-slogan {
   padding-top: 80px;
@@ -2198,6 +2204,7 @@ svg * {
 
 
 .portfolio-bottom-link{
+  padding: 120px 0;
 	position:relative;
 	overflow:hidden;
 	display:block;
@@ -2250,7 +2257,14 @@ svg * {
 .portfolio-bottom-link:hover:after {
 	right:0;
 }
-
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .portfolio-bottom-link{
+    padding: 90px 0;
+  }
+  .portfolio-bottom-link span {
+    font-size: 16px;
+  }
+}
 
 /* #Portfolio
 ================================================== */
@@ -2449,6 +2463,33 @@ svg * {
         -ms-transition-property:     -ms-transform, opacity;
          -o-transition-property:         top, left, opacity;
             transition-property:         transform, opacity;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .portfolio-box-1 .mask {
+    background-color: #444;
+    opacity: 0.36;
+    height: 18%;
+    bottom: 0;
+    top: auto;
+  }
+  .portfolio-box-1 h3 {
+    top: auto;
+    bottom: 0;
+    opacity: 1;
+    left: 15px;
+    bottom: 5px;
+    text-align: left;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .portfolio-box-1 h3 span {
+    font-size: 25px;
+    font-weight: 600;
+  }
 }
 
 /* #Ajax Projects Expander Styles
