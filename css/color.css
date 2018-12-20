@@ -1,5 +1,6 @@
 
 ul.slimmenu li a:hover,
+.cbp-af-header-shrink ul.slimmenu li a:hover,
 ul.slimmenu li a.mPS2id-highlight,
 .about-wrap .about-icon,
 .counter-wrap p,
@@ -11,29 +12,19 @@ ul.slimmenu li a.mPS2id-highlight,
 .journal-det .link,
 .journal-det-right .link,
 .list-social-team li.icon-team a:hover,
-.project-page a:hover,
-.name-aut-replay a,
-.link-recents a:hover,
-.logo-down-wrap .logo-down-icon,
-.parallax-text-demo p {
+.project-page a {
     color: #cfa144;
-}
-.cd-pagination .current,
-.try-it .button--moema:first-child {
-	background-color: #cfa144;
-	border-color: #cfa144;
 }
 .menu--juliet .menu__link::after,
 #owl-sep-1.owl-theme .owl-controls .owl-page.active span,
 #owl-logos.owl-theme .owl-controls .owl-page.active span,
 #owl-portfolio-slider.owl-theme .owl-controls .owl-page.active span,
-#owl-post-slider.owl-theme .owl-controls .owl-page.active span,
 .des-programs-author.left .link:before,
 .des-programs-author.right .link:before,
 .pricing-plan .button,
 .journal-det .link:before,
 .journal-det-right .link:before,
-.tags:hover {
+.pro-bar {
 	background: #cfa144;
 }
 #sync2 .synced .item {
@@ -42,31 +33,9 @@ ul.slimmenu li a.mPS2id-highlight,
 #cd-zoom-in, #cd-zoom-out,
 #ajax-form button:hover,
 .list-social-footer li:hover,
-.comments button:hover,
-.sidebar input:active,
-.sidebar input:focus,
-.link-tag a:hover,
-.home-text .button--moema,
-.try-it a.button-effect:hover {
+#filter li .current,
+#filter li a:hover {
 	background-color: #cfa144;
-}
-.comments textarea:focus,
-.comments input:focus,
-.comments textarea:active,
-.comments input:active {
-	border-bottom:1px solid #cfa144;
-}
-.sidebar input:-ms-input-placeholder  {
-	color:#cfa144;
-}
-.sidebar input::-moz-placeholder  {
-	color:#cfa144;
-}
-.sidebar input:-moz-placeholder  {
-	color:#cfa144;
-}
-.sidebar input::-webkit-input-placeholder  {
-	color:#cfa144;
 }
 
 
